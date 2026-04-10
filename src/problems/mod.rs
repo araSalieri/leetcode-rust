@@ -4,3 +4,4 @@ pub mod p0026_remove_duplicates;
 pub mod p0027_remove_element;
 pub mod p0028_first_occurence_in_string;
 pub mod p0035_search_in_position;
+pub mod p0058_length_of_last_word;
