@@ -7,5 +7,6 @@ pub mod p0035_search_in_position;
 pub mod p0058_length_of_last_word;
 pub mod p0389_find_the_difference;
 pub mod p0392_is_subsequence;
+pub mod p1342_number_of_steps_to_zero;
 pub mod p1480_running_sum_of_1d_array;
 pub mod p1672_richest_customer_wealth;
