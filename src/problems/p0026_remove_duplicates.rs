@@ -6,36 +6,32 @@
 // The first k elements of nums should contain the unique numbers in sorted order. The remaining elements beyond index k - 1 can be ignored.
 
 // Custom Judge:
-
 // The judge will test your solution with the following code:
 
 // int[] nums = [...]; // Input array
 // int[] expectedNums = [...]; // The expected answer with correct length
-
 // int k = removeDuplicates(nums); // Calls your implementation
-
 // assert k == expectedNums.length;
 // for (int i = 0; i < k; i++) {
 //     assert nums[i] == expectedNums[i];
 // }
+
 // If all assertions pass, then your solution will be accepted.
 
 // Example 1:
-
 // Input: nums = [1,1,2]
 // Output: 2, nums = [1,2,_]
 // Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
 // It does not matter what you leave beyond the returned k (hence they are underscores).
-// Example 2:
 
+// Example 2:
 // Input: nums = [0,0,1,1,1,2,2,3,3,4]
 // Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
 // Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
 // Constraints:
-
-// 1 <= nums.length <= 3 * 104
+// 1 <= nums.length <= 3 * 10^4
 // -100 <= nums[i] <= 100
 // nums is sorted in non-decreasing order.
 
@@ -61,6 +57,19 @@ mod tests {
 
     #[test]
     fn example_1() {
-        assert_eq!(remove_duplicates(&mut vec![1, 1, 2]), 2);
+        let mut nums = vec![1, 1, 2];
+        let expected = vec![1, 2];
+        let k = remove_duplicates(&mut nums) as usize;
+        assert_eq!(k, expected.len());
+        assert_eq!(&nums[..k], expected.as_slice());
+    }
+
+    #[test]
+    fn example_2() {
+        let mut nums = vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+        let expected = vec![0, 1, 2, 3, 4];
+        let k = remove_duplicates(&mut nums) as usize;
+        assert_eq!(k, expected.len());
+        assert_eq!(&nums[..k], expected.as_slice());
     }
 }

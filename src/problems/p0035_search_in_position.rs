@@ -4,24 +4,22 @@
 // You must write an algorithm with O(log n) runtime complexity.
 
 // Example 1:
-
 // Input: nums = [1,3,5,6], target = 5
 // Output: 2
-// Example 2:
 
+// Example 2:
 // Input: nums = [1,3,5,6], target = 2
 // Output: 1
-// Example 3:
 
+// Example 3:
 // Input: nums = [1,3,5,6], target = 7
 // Output: 4
 
 // Constraints:
-
-// 1 <= nums.length <= 104
-// -104 <= nums[i] <= 104
+// 1 <= nums.length <= 10^4
+// -10^4 <= nums[i] <= 10^4
 // nums contains distinct values sorted in ascending order.
-// -104 <= target <= 104
+// -10^4 <= target <= 10^4
 
 pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
     let len = nums.len();
@@ -54,5 +52,10 @@ mod tests {
     #[test]
     fn example_2() {
         assert_eq!(search_insert(vec![1, 3, 5, 6], 2), 1);
+    }
+
+    #[test]
+    fn example_3() {
+        assert_eq!(search_insert(vec![1, 3, 5, 6], 7), 4);
     }
 }

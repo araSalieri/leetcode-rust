@@ -8,38 +8,27 @@
 // Every close bracket has a corresponding open bracket of the same type.
 
 // Example 1:
-
 // Input: s = "()"
-
 // Output: true
 
 // Example 2:
-
 // Input: s = "()[]{}"
-
 // Output: true
 
 // Example 3:
-
 // Input: s = "(]"
-
 // Output: false
 
 // Example 4:
-
 // Input: s = "([])"
-
 // Output: true
 
 // Example 5:
-
 // Input: s = "([)]"
-
 // Output: false
 
 // Constraints:
-
-// 1 <= s.length <= 104
+// 1 <= s.length <= 10^4
 // s consists of parentheses only '()[]{}'.
 
 pub fn is_valid(s: String) -> bool {
@@ -82,5 +71,25 @@ mod tests {
     #[test]
     fn example_1() {
         assert_eq!(is_valid(String::from("{}")), true);
+    }
+
+    #[test]
+    fn example_2() {
+        assert_eq!(is_valid(String::from("()[]{}")), true);
+    }
+
+    #[test]
+    fn example_3() {
+        assert_eq!(is_valid(String::from("(]")), false);
+    }
+
+    #[test]
+    fn example_4() {
+        assert_eq!(is_valid(String::from("([])")), true);
+    }
+
+    #[test]
+    fn example_5() {
+        assert_eq!(is_valid(String::from("([)]")), false);
     }
 }
