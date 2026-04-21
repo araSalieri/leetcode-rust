@@ -8,6 +8,7 @@ pub mod p0058_length_of_last_word;
 pub mod p0066_plus_one;
 pub mod p0070_climbing_stairs;
 pub mod p0125_valid_palindrome;
+pub mod p0217_contains_duplicate;
 pub mod p0344_reverse_string;
 pub mod p0383_ransom_note;
 pub mod p0389_find_the_difference;
