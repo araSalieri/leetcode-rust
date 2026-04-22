@@ -6,6 +6,7 @@ pub mod p0028_first_occurence_in_string;
 pub mod p0035_search_in_position;
 pub mod p0058_length_of_last_word;
 pub mod p0066_plus_one;
+pub mod p0069_sqrt_x;
 pub mod p0070_climbing_stairs;
 pub mod p0125_valid_palindrome;
 pub mod p0217_contains_duplicate;
