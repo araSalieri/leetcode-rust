@@ -15,18 +15,7 @@
 // Input: list1 = [], list2 = [0]
 // Output: [0]
 
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    fn new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-}
+use crate::list_node::ListNode;
 
 pub fn merge_two_lists(
     list1: Option<Box<ListNode>>,
@@ -50,15 +39,10 @@ pub fn merge_two_lists(
     return merge(list1, list2);
 }
 
-pub fn to_list(vals: Vec<i32>) -> Option<Box<ListNode>> {
-    vals.into_iter()
-        .rev()
-        .fold(None, |next, val| Some(Box::new(ListNode { val, next })))
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::list_node::to_list;
 
     #[test]
     fn example_1() {
