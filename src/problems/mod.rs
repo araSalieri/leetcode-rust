@@ -10,6 +10,7 @@ pub mod p0066_plus_one;
 pub mod p0069_sqrt_x;
 pub mod p0070_climbing_stairs;
 pub mod p0083_remove_duplicates_from_sorted_lists;
+pub mod p0088_merge_sorted_array;
 pub mod p0125_valid_palindrome;
 pub mod p0217_contains_duplicate;
 pub mod p0258_add_digits;
