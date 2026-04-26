@@ -1,35 +1,37 @@
-// https://leetcode.com/problems/valid-parentheses/description/
-// Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+/* https://leetcode.com/problems/valid-parentheses/description/
 
-// An input string is valid if:
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
-// Open brackets must be closed by the same type of brackets.
-// Open brackets must be closed in the correct order.
-// Every close bracket has a corresponding open bracket of the same type.
+An input string is valid if:
 
-// Example 1:
-// Input: s = "()"
-// Output: true
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Every close bracket has a corresponding open bracket of the same type.
 
-// Example 2:
-// Input: s = "()[]{}"
-// Output: true
+Example 1:
+Input: s = "()"
+Output: true
 
-// Example 3:
-// Input: s = "(]"
-// Output: false
+Example 2:
+Input: s = "()[]{}"
+Output: true
 
-// Example 4:
-// Input: s = "([])"
-// Output: true
+Example 3:
+Input: s = "(]"
+Output: false
 
-// Example 5:
-// Input: s = "([)]"
-// Output: false
+Example 4:
+Input: s = "([])"
+Output: true
 
-// Constraints:
-// 1 <= s.length <= 10^4
-// s consists of parentheses only '()[]{}'.
+Example 5:
+Input: s = "([)]"
+Output: false
+
+Constraints:
+1 <= s.length <= 10^4
+s consists of parentheses only '()[]{}'.
+*/
 
 pub fn is_valid(s: String) -> bool {
     if s.len() == 1 {

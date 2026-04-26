@@ -1,21 +1,23 @@
-// https://leetcode.com/problems/longest-common-prefix/description/
-// Write a function to find the longest common prefix string amongst an array of strings.
+/* https://leetcode.com/problems/longest-common-prefix/description/
 
-// If there is no common prefix, return an empty string "".
+Write a function to find the longest common prefix string amongst an array of strings.
 
-// Example 1:
-// Input: strs = ["flower","flow","flight"]
-// Output: "fl"
+If there is no common prefix, return an empty string "".
 
-// Example 2:
-// Input: strs = ["dog","racecar","car"]
-// Output: ""
-// Explanation: There is no common prefix among the input strings.
+Example 1:
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
 
-// Constraints:
-// 1 <= strs.length <= 200
-// 0 <= strs[i].length <= 200
-// strs[i] consists of only lowercase English letters if it is non-empty.
+Example 2:
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+
+Constraints:
+1 <= strs.length <= 200
+0 <= strs[i].length <= 200
+strs[i] consists of only lowercase English letters if it is non-empty.
+*/
 
 pub fn longest_common_prefix(strs: Vec<String>) -> String {
     let base = strs[0].as_bytes();
