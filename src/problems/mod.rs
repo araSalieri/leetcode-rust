@@ -18,6 +18,7 @@ pub mod p0344_reverse_string;
 pub mod p0383_ransom_note;
 pub mod p0389_find_the_difference;
 pub mod p0392_is_subsequence;
+pub mod p0485_max_consecutive_ones;
 pub mod p0704_binary_search;
 pub mod p1342_number_of_steps_to_zero;
 pub mod p1480_running_sum_of_1d_array;
