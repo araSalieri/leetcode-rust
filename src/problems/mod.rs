@@ -21,6 +21,7 @@ pub mod p0392_is_subsequence;
 pub mod p0459_repeated_substring_pattern;
 pub mod p0485_max_consecutive_ones;
 pub mod p0704_binary_search;
+pub mod p1089_duplicate_zeros;
 pub mod p1342_number_of_steps_to_zero;
 pub mod p1480_running_sum_of_1d_array;
 pub mod p1672_richest_customer_wealth;
