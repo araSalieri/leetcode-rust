@@ -12,6 +12,7 @@ pub mod p0070_climbing_stairs;
 pub mod p0083_remove_duplicates_from_sorted_lists;
 pub mod p0088_merge_sorted_array;
 pub mod p0125_valid_palindrome;
+pub mod p0136_single_number;
 pub mod p0217_contains_duplicate;
 pub mod p0258_add_digits;
 pub mod p0344_reverse_string;
