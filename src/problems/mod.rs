@@ -15,6 +15,7 @@ pub mod p0125_valid_palindrome;
 pub mod p0136_single_number;
 pub mod p0217_contains_duplicate;
 pub mod p0258_add_digits;
+pub mod p0268_missing_number;
 pub mod p0344_reverse_string;
 pub mod p0383_ransom_note;
 pub mod p0389_find_the_difference;
